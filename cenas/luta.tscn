@@ -1,3 +1,37 @@
 [gd_scene format=3 uid="uid://bsobk5n0yw2de"]
 
+[ext_resource type="PackedScene" uid="uid://o2q7qbauws06" path="res://cenas/quebra-cabeca.tscn" id="1_v1pmr"]
+[ext_resource type="PackedScene" uid="uid://cur25jvvtvtya" path="res://cenas/transicao.tscn" id="2_fthfm"]
+[ext_resource type="Texture2D" uid="uid://cw4xmbfn0fg6a" path="res://sprites/cenario/cenario_luta.png" id="3_asqqm"]
+
 [node name="Luta" type="Node2D" unique_id=1258617929]
+
+[node name="Topo" type="TextureRect" parent="." unique_id=1635073296]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuebraCabeca1" parent="." unique_id=1833720229 instance=ExtResource("1_v1pmr")]
+
+[node name="QuebraCabeca2" parent="." unique_id=1506140571 instance=ExtResource("1_v1pmr")]
+
+[node name="Transicao" parent="." unique_id=1134791458 instance=ExtResource("2_fthfm")]
+
+[node name="Fundo2" type="TextureRect" parent="." unique_id=544102934]
+offset_left = 1003.0
+offset_right = 1169.7273
+offset_bottom = 196.18182
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("3_asqqm")
+flip_h = true
+
+[node name="Fundo1" type="TextureRect" parent="." unique_id=10419442]
+offset_right = 166.72733
+offset_bottom = 196.18181
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("3_asqqm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=639315492]
+offset_left = 917.0
+offset_right = 1003.0
+offset_bottom = 1079.0
+color = Color(0.0028847754, 0.00032053058, 0.0022437142, 0.735)
