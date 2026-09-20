@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://o2q7qbauws06" path="res://cenas/quebra-cabeca.tscn" id="1_v1pmr"]
 [ext_resource type="PackedScene" uid="uid://cur25jvvtvtya" path="res://cenas/transicao.tscn" id="2_fthfm"]
 [ext_resource type="Texture2D" uid="uid://cw4xmbfn0fg6a" path="res://sprites/cenario/cenario_luta.png" id="3_asqqm"]
+[ext_resource type="Texture2D" uid="uid://bevc3oe4giajd" path="res://sprites/personagens/tenebria.png" id="3_yu255"]
+[ext_resource type="Texture2D" uid="uid://dx2perg5emolq" path="res://sprites/personagens/eugenio.png" id="4_d33o0"]
+[ext_resource type="FontFile" uid="uid://4a15g4t6g3nr" path="res://graphics/fonts/karmatic-arcade/ka1.ttf" id="6_48sn1"]
 
 [node name="Luta" type="Node2D" unique_id=1258617929]
 
@@ -16,7 +19,25 @@ offset_bottom = 40.0
 
 [node name="Transicao" parent="." unique_id=1134791458 instance=ExtResource("2_fthfm")]
 
-[node name="Fundo2" type="TextureRect" parent="." unique_id=544102934]
+[node name="Fundo" type="Node2D" parent="." unique_id=1214431070]
+
+[node name="P2" type="Sprite2D" parent="Fundo" unique_id=1709901021]
+position = Vector2(123, 125)
+scale = Vector2(2, 2)
+texture = ExtResource("3_yu255")
+
+[node name="P1" type="Sprite2D" parent="Fundo" unique_id=1348719997]
+position = Vector2(1801, 129)
+scale = Vector2(2, 2)
+texture = ExtResource("4_d33o0")
+
+[node name="Fundo1" type="TextureRect" parent="Fundo" unique_id=10419442]
+offset_right = 166.72733
+offset_bottom = 196.18181
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("3_asqqm")
+
+[node name="Fundo2" type="TextureRect" parent="Fundo" unique_id=544102934]
 offset_left = 1003.0
 offset_right = 1169.7273
 offset_bottom = 196.18182
@@ -24,14 +45,38 @@ scale = Vector2(5.5, 5.5)
 texture = ExtResource("3_asqqm")
 flip_h = true
 
-[node name="Fundo1" type="TextureRect" parent="." unique_id=10419442]
-offset_right = 166.72733
-offset_bottom = 196.18181
-scale = Vector2(5.5, 5.5)
-texture = ExtResource("3_asqqm")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=639315492]
+[node name="ColorRect" type="ColorRect" parent="Fundo" unique_id=639315492]
 offset_left = 917.0
 offset_right = 1003.0
 offset_bottom = 1079.0
 color = Color(0.0028847754, 0.00032053058, 0.0022437142, 0.735)
+
+[node name="Q2" type="Sprite2D" parent="Fundo" unique_id=103364619]
+position = Vector2(1463, 315)
+scale = Vector2(2.775, 2.775)
+texture = ExtResource("3_yu255")
+
+[node name="Q1" type="Sprite2D" parent="Fundo" unique_id=958791576]
+position = Vector2(458.99063, 315.49374)
+scale = Vector2(2.7668233, 2.7626565)
+texture = ExtResource("4_d33o0")
+
+[node name="Label" type="Label" parent="Fundo" unique_id=1733317981]
+offset_left = 212.0
+offset_top = 40.0
+offset_right = 408.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(1.1755697, 0.8873961, 1.1755697, 0.73333335)
+theme_override_fonts/font = ExtResource("6_48sn1")
+theme_override_font_sizes/font_size = 32
+text = "Player 01"
+
+[node name="Label2" type="Label" parent="Fundo" unique_id=73812867]
+offset_left = 1465.0
+offset_top = 40.0
+offset_right = 1702.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(1.1755697, 0.8873961, 1.1755697, 0.73333335)
+theme_override_fonts/font = ExtResource("6_48sn1")
+theme_override_font_sizes/font_size = 32
+text = "Player  02"
