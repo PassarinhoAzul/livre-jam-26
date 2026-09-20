@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bjsjhnj6p74gy"]
+
+[ext_resource type="PackedScene" uid="uid://cur25jvvtvtya" path="res://cenas/transicao.tscn" id="1_85tbp"]
+
+[node name="TelaFinal" type="Node2D" unique_id=1474480890]
+
+[node name="Fundo" type="TextureRect" parent="." unique_id=1548274087]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1838123286]
+
+[node name="Label" type="Label" parent="." unique_id=226896095]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Transicao" parent="." unique_id=1134791458 instance=ExtResource("1_85tbp")]
