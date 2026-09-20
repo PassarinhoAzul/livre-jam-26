@@ -1,1 +1,7 @@
 res://cenas/luta.tscn
+res://cenas/peca.tscn
+res://cenas/quebra-cabeca.tscn
+res://scripts/quebra-cabeca.gd
+res://cenas/peca.gd
+res://cenas/quebra_cabeca.gd
+res://scripts/peca.gd

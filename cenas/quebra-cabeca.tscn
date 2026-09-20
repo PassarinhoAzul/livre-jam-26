@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://o2q7qbauws06"]
 
+[ext_resource type="Script" uid="uid://c3lv1q1ndsg3l" path="res://scripts/quebra-cabeca.gd" id="1_tr8x4"]
+
 [node name="QuebraCabeca" type="Node2D" unique_id=1833720229]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1761217583]
+script = ExtResource("1_tr8x4")

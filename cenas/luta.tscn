@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bevc3oe4giajd" path="res://sprites/personagens/tenebria.png" id="3_yu255"]
 [ext_resource type="Texture2D" uid="uid://dx2perg5emolq" path="res://sprites/personagens/eugenio.png" id="4_d33o0"]
 [ext_resource type="FontFile" uid="uid://4a15g4t6g3nr" path="res://graphics/fonts/karmatic-arcade/ka1.ttf" id="6_48sn1"]
+[ext_resource type="PackedScene" uid="uid://dogsuiorslh00" path="res://cenas/peca.tscn" id="7_d33o0"]
 
 [node name="Luta" type="Node2D" unique_id=1258617929]
 
@@ -80,3 +81,6 @@ theme_override_colors/font_color = Color(1.1755697, 0.8873961, 1.1755697, 0.7333
 theme_override_fonts/font = ExtResource("6_48sn1")
 theme_override_font_sizes/font_size = 32
 text = "Player  02"
+
+[node name="Peca" parent="." unique_id=1036774362 instance=ExtResource("7_d33o0")]
+position = Vector2(-283, 262)

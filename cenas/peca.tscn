@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://dogsuiorslh00"]
 
+[ext_resource type="Texture2D" uid="uid://bevc3oe4giajd" path="res://sprites/personagens/tenebria.png" id="1_pmyal"]
+[ext_resource type="Script" uid="uid://muv7vq55ged0" path="res://scripts/peca.gd" id="1_sep8n"]
+[ext_resource type="Texture2D" uid="uid://swtdv4ct2r6p" path="res://sprites/personagens/top.png" id="2_sep8n"]
+
 [node name="Peca" type="Node2D" unique_id=1036774362]
+script = ExtResource("1_sep8n")
+
+[node name="arte" type="Sprite2D" parent="." unique_id=270505045]
+scale = Vector2(6, 6)
+texture = ExtResource("1_pmyal")
+hframes = 4
+vframes = 3
+
+[node name="top" type="Sprite2D" parent="." unique_id=1623464027]
+position = Vector2(0, -1.9073486e-06)
+scale = Vector2(6, 5.4)
+texture = ExtResource("2_sep8n")
